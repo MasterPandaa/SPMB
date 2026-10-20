@@ -1,77 +1,44 @@
-# SPMB — Sistem Penerimaan Murid Baru
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MasterPandaa/MasterPandaa/main/assets/banners/SPMB.svg" alt="SPMB Admissions SaaS Banner" width="100%">
+</p>
 
-Web-based student admissions and online registration management portal built with **Laravel 12** and **Bootstrap 5**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Framework-Laravel-FF2D20?style=flat-square&logo=laravel" alt="Laravel">
+  <img src="https://img.shields.io/badge/Model-Multi--Tenant_SaaS-0284C7?style=flat-square" alt="Multi-Tenant">
+  <img src="https://img.shields.io/badge/Exports-PDF_|_Excel_Reports-10B981?style=flat-square" alt="Exports">
+  <img src="https://img.shields.io/badge/Sector-EdTech_Admissions-D97706?style=flat-square" alt="EdTech">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-gray?style=flat-square" alt="License"></a>
+</p>
 
-SPMB simplifies the student enrollment process by providing a centralized dashboard for applicants and administrative staff, replacing manual paper-based admissions with a digital workflow.
+## Overview
 
----
-
-## Features
-
-- **Applicant Registration & Authentication**: Secure registration and login for prospective students with credential validation.
-- **Admissions Dashboard**: Centralized dashboard displaying registration status, announcements, and application progress.
-- **Verification Workflow**: Administrative interface for admissions officers to review submitted applicant data and documents.
-- **Reporting & Data Export**: Export candidate rosters and admission statistics to PDF and spreadsheet formats for administrative records.
-- **Responsive Interface**: Mobile-friendly UI styled with Bootstrap 5 for access across desktop and mobile devices.
-
----
-
-## Tech Stack
-
-- **Framework**: Laravel 12
-- **Backend**: PHP 8.2+
-- **Frontend**: Blade Templates, Bootstrap 5.3
-- **Database**: SQLite (Default / Development) / MySQL
-- **Testing**: Pest PHP / PHPUnit
+Institutional student admissions frequently overwhelm administrative personnel with unverified document submissions, manual data entry, and fragmented reporting. Developed for **Life Media**, this multi-tenant student admission management portal built on **Laravel** digitizes registration, document validation, and institutional admissions reporting.
 
 ---
 
-## Getting Started
+## Core Capabilities
 
-### Prerequisites
+- **Multi-Tenant Architecture**: Supports multiple school branches and academic programs under distinct tenant configuration boundaries.
+- **Document Verification Workflow**: Web interface for administrative officers to inspect, verify, or request revision of applicant diplomas and certificates.
+- **Automated Reporting Suite**: Generates printable PDF registration confirmation cards and multi-column Excel spreadsheets for entrance exam scheduling.
+- **Applicant Progress Tracking**: Interactive registration timeline allowing applicants to track submission verification, exam schedules, and announcement results.
 
-- PHP >= 8.2
-- Composer
-- Node.js & NPM
-- SQLite or MySQL
+---
 
-### Installation
+## Quickstart
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/MasterPandaa/SPMB.git
-   cd SPMB
-   ```
-
-2. **Install PHP dependencies**:
-   ```bash
-   composer install
-   ```
-
-3. **Install frontend dependencies**:
-   ```bash
-   npm install && npm run build
-   ```
-
-4. **Environment setup**:
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
-
-5. **Run database migrations**:
-   ```bash
-   php artisan migrate
-   ```
-
-6. **Start the local development server**:
-   ```bash
-   php artisan serve
-   ```
-   Visit `http://127.0.0.1:8000` in your browser.
+```bash
+git clone https://github.com/MasterPandaa/SPMB.git
+cd SPMB
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate --seed
+php artisan serve
+```
 
 ---
 
 ## License
 
-This project is open-source and licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
